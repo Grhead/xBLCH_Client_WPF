@@ -1,0 +1,78 @@
+﻿<Page x:Class="Client_BLCHxVote_WPF.Views.AuthRepeatView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Client_BLCHxVote_WPF.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="750"
+      d:DesignWidth="450"
+      Title="AuthRepeatView">
+
+    <Grid>
+        <StackPanel
+            Background="#4F6C77"
+            MaxHeight="60"
+            MinHeight="60"
+            VerticalAlignment="Top" />
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock
+                FontFamily="Nunito-VariableFont_wght"
+                FontSize="19"
+                FontStyle="Normal"
+                Margin="15,10,15,0"
+                Name="TitleAddress"
+                Text="Адрес" />
+            <TextBox
+                Background="#EAEEEF"
+                BorderBrush="Black"
+                BorderThickness="0,0,0,2"
+                MinHeight="30"
+                FontFamily="Nunito-VariableFont_wght"
+                FontSize="19"
+                FontStyle="Normal"
+                Foreground="Black"
+                Margin="15,0,15,60"
+                Name="BlockAdress"
+                Text="{Binding Path=PublicKText}"
+                TextWrapping="NoWrap" 
+                PreviewKeyDown="BlockAdress_PreviewKeyDown"/>
+            <TextBlock
+                FontFamily="Nunito-VariableFont_wght"
+                FontSize="19"
+                FontStyle="Normal"
+                Margin="15,10,15,0"
+                Name="TitleCode"
+                Text="Приватный ключ" />
+            <TextBox
+                Background="#EAEEEF"
+                BorderBrush="Black"
+                BorderThickness="0,0,0,2"
+                FontFamily="Nunito-VariableFont_wght"
+                FontSize="19"
+                MinHeight="30"
+                FontStyle="Normal"
+                Foreground="Black"
+                Margin="15,0,15,60"
+                Name="BlockCode"
+                Text="{Binding Path=PrivateKText}"
+                TextWrapping="NoWrap"
+                PreviewKeyDown="BlockAdress_PreviewKeyDown"/>
+            <Button
+                Background="#4F6C77"
+                Content="Войти"
+                FontFamily="Nunito-VariableFont_wght"
+                FontSize="22"
+                FontStyle="Normal"
+                Foreground="White"
+                HorizontalAlignment="Center"
+                HorizontalContentAlignment="Center"
+                MinHeight="60"
+                MinWidth="170"
+                Name="ButtonSubmit"
+                VerticalContentAlignment="Center"
+                Command="{Binding StartCommand}"
+                />
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Nunito-VariableFont_wght.ttf" />
+    <None Remove="Assets\votesPNG.png" />
+    <None Remove="Assets\votesPNG1.png" />
+    <None Remove="Assets\votesPNG2.png" />
+    <None Remove="Assets\votesPNG4.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.21.11" />
+    <PackageReference Include="Google.Protobuf.Tools" Version="3.21.11" />
+    <PackageReference Include="Grpc.Core.Api" Version="2.50.0" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.50.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.51.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Syncfusion.SfChart.WPF" Version="20.3.0.61" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\gRPC-Library\gRPC-Library.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Nunito-VariableFont_wght.ttf" />
+    <Resource Include="Assets\votesPNG.png" />
+    <Resource Include="Assets\votesPNG1.png" />
+    <Resource Include="Assets\votesPNG2.png" />
+    <Resource Include="Assets\votesPNG4.png" />
+  </ItemGroup>
+
+</Project>

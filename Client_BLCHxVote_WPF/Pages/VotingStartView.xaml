@@ -1,0 +1,76 @@
+﻿<Page x:Class="Client_BLCHxVote_WPF.Views.VotingStartView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Client_BLCHxVote_WPF.Views" 
+      xmlns:client_blchxvote_wpf="clr-namespace:Client_BLCHxVote_WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="750"
+      d:DesignWidth="450"
+      Title="VotingStartView">
+    <Grid>
+        <StackPanel
+            Background="#4F6C77"
+            MaxHeight="60"
+            MinHeight="60"
+            VerticalAlignment="Top">
+            <TextBlock
+                FontFamily="Nunito-VariableFont_wght"
+                FontSize="32"
+                FontStyle="Normal"
+                FontWeight="Bold"
+                Foreground="White"
+                HorizontalAlignment="Center"
+                Margin="0,10,0,0"
+                Name="VoteTitle"
+                Text="xVOTE 2022"
+                VerticalAlignment="Center" />
+        </StackPanel>
+        <StackPanel Margin="0,80,0,0">
+            <TextBlock
+                Background="#EAEEEF"
+                FontFamily="Nunito-VariableFont_wght"
+                FontSize="20"
+                FontStyle="Normal"
+                Foreground="Black"
+                HorizontalAlignment="Center"
+                Margin="0,10,0,0"
+                Name="TimeTitle"
+                Padding="8"
+                VerticalAlignment="Center"
+                Text="{Binding TimeShow}"
+                />
+            <ListBox
+                Background="#EAEEEF"
+                BorderThickness="2"
+                Margin="15,30,15,0"
+                MinHeight="450"
+                Name="CandidatesListTier"
+                ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                FontFamily="Nunito-VariableFont_wght"
+                FontSize="18"
+                Padding="7 5 7 0"
+                FontStyle="Normal"
+                SelectedItem="{Binding SelectedItem}"
+                >
+            </ListBox>
+            <Button
+                Background="#4F6C77"
+                Content="Подтвердить"
+                FontFamily="Nunito-VariableFont_wght"
+                FontSize="22"
+                FontStyle="Normal"
+                Foreground="White"
+                HorizontalAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Margin="0,20,0,0"
+                MinHeight="60"
+                MinWidth="170"
+                Name="ButtonSubmit"
+                VerticalContentAlignment="Center"
+                Command="{Binding VoteCommand}"/>
+        </StackPanel>
+    </Grid>
+</Page>

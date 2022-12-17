@@ -1,0 +1,12 @@
+C:\Users\forda\source\repos\Client_BLCHxVote_WPF\gRPC-Library\bin\Debug\net6.0\gRPC-Library.deps.json
+C:\Users\forda\source\repos\Client_BLCHxVote_WPF\gRPC-Library\bin\Debug\net6.0\gRPC-Library.dll
+C:\Users\forda\source\repos\Client_BLCHxVote_WPF\gRPC-Library\bin\Debug\net6.0\gRPC-Library.pdb
+C:\Users\forda\source\repos\Client_BLCHxVote_WPF\gRPC-Library\obj\Debug\net6.0\gRPC-Library.csproj.AssemblyReference.cache
+C:\Users\forda\source\repos\Client_BLCHxVote_WPF\gRPC-Library\obj\Debug\net6.0\gRPC-Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\forda\source\repos\Client_BLCHxVote_WPF\gRPC-Library\obj\Debug\net6.0\gRPC-Library.AssemblyInfoInputs.cache
+C:\Users\forda\source\repos\Client_BLCHxVote_WPF\gRPC-Library\obj\Debug\net6.0\gRPC-Library.AssemblyInfo.cs
+C:\Users\forda\source\repos\Client_BLCHxVote_WPF\gRPC-Library\obj\Debug\net6.0\gRPC-Library.csproj.CoreCompileInputs.cache
+C:\Users\forda\source\repos\Client_BLCHxVote_WPF\gRPC-Library\obj\Debug\net6.0\gRPC-Library.dll
+C:\Users\forda\source\repos\Client_BLCHxVote_WPF\gRPC-Library\obj\Debug\net6.0\refint\gRPC-Library.dll
+C:\Users\forda\source\repos\Client_BLCHxVote_WPF\gRPC-Library\obj\Debug\net6.0\gRPC-Library.pdb
+C:\Users\forda\source\repos\Client_BLCHxVote_WPF\gRPC-Library\obj\Debug\net6.0\ref\gRPC-Library.dll
