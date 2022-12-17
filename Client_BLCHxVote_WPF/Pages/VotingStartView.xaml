@@ -5,8 +5,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Client_BLCHxVote_WPF.Views" 
       xmlns:client_blchxvote_wpf="clr-namespace:Client_BLCHxVote_WPF" 
-      xmlns:req="clr-namespace:Client_BLCHxVote_WPF.Req"
-      d:DataContext="{d:DesignInstance Type=client_blchxvote_wpf:ClientLogical}"
+      xmlns:req="clr-namespace:Client_BLCHxVote_WPF.Req" xmlns:viewmodels="clr-namespace:Client_BLCHxVote_WPF.ViewModels"
+      d:DataContext="{d:DesignInstance Type=viewmodels:ClientLogical}"
       mc:Ignorable="d"
       d:DesignHeight="750"
       d:DesignWidth="450"
@@ -39,9 +39,9 @@
                 HorizontalAlignment="Center"
                 Margin="0,10,0,0"
                 Name="TimeTitle"
+                Text="{Binding TimeShow}"
                 Padding="8"
                 VerticalAlignment="Center"
-                Text="{Binding Timel}"
                 />
             <ListBox
                 Background="#EAEEEF"
@@ -55,8 +55,19 @@
                 FontSize="18"
                 Padding="7 5 7 0"
                 FontStyle="Normal"
-                SelectedItem="{Binding SelectedItem}"
-                >
+                ItemsSource="{Binding CandidatesView}"
+                SelectedItem="{Binding SelectedItem}">
+                <ListBox.ItemTemplate>
+                <DataTemplate>
+                        <StackPanel>
+                            <TextBlock
+                                Text="{Binding CandidateName}">
+
+                            </TextBlock>
+                        </StackPanel>
+                </DataTemplate>
+                </ListBox.ItemTemplate>
+                
             </ListBox>
             <Button
                 Background="#4F6C77"

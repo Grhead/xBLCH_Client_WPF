@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Client_BLCHxVote_WPF.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,7 @@ namespace Client_BLCHxVote_WPF.Views
         public AuthStartView()
         {
             InitializeComponent();
-            this.DataContext = new ClientLogical();
+            this.DataContext = new AuthViewModel();
         }
 
         private void BlockAdress_PreviewKeyDown(object sender, KeyEventArgs e)

@@ -1,4 +1,5 @@
 ﻿using Client_BLCHxVote_WPF.Req;
+using Client_BLCHxVote_WPF.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,11 +24,11 @@ namespace Client_BLCHxVote_WPF.Views
         public VotingStartView()
         {
             InitializeComponent();
-            //this.DataContext = new ClientLogical();
-            foreach (var item in ClientLogical.CandidatesView)
-            {
-                CandidatesListTier.Items.Add(item.CandidateName);
-            }
+            this.DataContext = new ClientLogical();
+            //foreach (var item in ClientLogical.CandidatesView)
+            //{
+            //    CandidatesListTier.Items.Add(item.CandidateName);
+            //}
         }
     }
 }

@@ -3,7 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:client_blchxvote_wpf="clr-namespace:Client_BLCHxVote_WPF" d:DataContext="{d:DesignInstance Type=client_blchxvote_wpf:ClientLogical}"
+      xmlns:client_blchxvote_wpf="clr-namespace:Client_BLCHxVote_WPF" xmlns:viewmodels="clr-namespace:Client_BLCHxVote_WPF.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:ResultLogic}"
       mc:Ignorable="d" 
       d:DesignHeight="750"
       d:DesignWidth="450"
@@ -39,9 +39,80 @@
                 FontSize="32"
                 FontStyle="Normal"
                 FontWeight="Regular"
-                Foreground="White"
+                Foreground="Black"
+                TextAlignment ="Center"
+                TextWrapping="Wrap"
                 Margin="0 20 0 0"
-                Text="{Binding SoloWinner}"/>
+                Name ="OnlyWinner"
+                Text="{Binding SoloWinner}"
+                />
+            <DataGrid
+                ItemsSource="{Binding BalanceView}"
+                Margin="2 20 2 0"
+                AutoGenerateColumns="False"
+                Name="Candidatess"
+                Background="Transparent"
+                HorizontalAlignment="Center"
+                AreRowDetailsFrozen="True"
+                RowBackground="Transparent"
+                SelectionMode="Single"
+                CanUserSortColumns="False"
+                CanUserAddRows="False"
+                CanUserDeleteRows="False"
+                CanUserResizeRows="False"
+                CanUserReorderColumns="False"
+                IsReadOnly="True"
+                VerticalScrollBarVisibility="Auto"
+                RowHeaderWidth="0">
+                <DataGrid.Columns>
+                    <DataGridTextColumn 
+                        Header="Кандидат"
+                        Binding="{Binding CandidateName}" 
+                        FontFamily="Nunito-VariableFont_wght"
+                        FontSize="18"
+                        Width="*">
+                        <DataGridColumn.HeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="FontSize" Value="18"/>
+                                <Setter Property="FontWeight" Value="Medium"/>
+                                <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="FontFamily" Value="Nunito-VariableFont_wght"/>
+                                <Setter Property="Background" Value="#4F6C77"/>
+                            </Style>
+                        </DataGridColumn.HeaderStyle>
+                        <DataGridTextColumn.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.CellStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn
+                        Header="Баланс"
+                        Binding="{Binding Balance}"
+                        FontFamily="Nunito-VariableFont_wght"
+                        FontSize="18">
+                        <DataGridColumn.HeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="FontSize" Value="18"/>
+                                <Setter Property="FontWeight" Value="Medium"/>
+                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="MinHeight" Value="31"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Background" Value="#4F6C77"/>
+                                <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                                <Setter Property="FontFamily" Value="Nunito-VariableFont_wght"/>
+                            </Style>
+                        </DataGridColumn.HeaderStyle>
+                        <DataGridTextColumn.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.CellStyle>
+                    </DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
         </StackPanel>
     </Grid>
 </Page>

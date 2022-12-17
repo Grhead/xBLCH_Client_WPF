@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\NodesPNG.png" />
     <None Remove="Assets\Nunito-VariableFont_wght.ttf" />
     <None Remove="Assets\votesPNG.png" />
     <None Remove="Assets\votesPNG1.png" />
@@ -33,6 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\NodesPNG.png" />
     <Resource Include="Assets\Nunito-VariableFont_wght.ttf" />
     <Resource Include="Assets\votesPNG.png" />
     <Resource Include="Assets\votesPNG1.png" />

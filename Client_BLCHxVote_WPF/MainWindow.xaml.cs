@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Grpc.Net.Client;
 using Client_BLCHxVote_WPF.Req;
+using Client_BLCHxVote_WPF.ViewModels;
 
 namespace Client_BLCHxVote_WPF
 {

@@ -3,7 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Client_BLCHxVote_WPF.Views" xmlns:client_blchxvote_wpf="clr-namespace:Client_BLCHxVote_WPF" d:DataContext="{d:DesignInstance Type=client_blchxvote_wpf:ClientLogical}"
+      xmlns:local="clr-namespace:Client_BLCHxVote_WPF.Views"
       mc:Ignorable="d" 
       d:DesignHeight="750"
       d:DesignWidth="450"
@@ -31,7 +31,8 @@
                 Background="#EAEEEF"
                 BorderBrush="Black"
                 BorderThickness="2"
-                MinHeight="450"
+                MinHeight="550"
+                MaxHeight="550"
                 VerticalContentAlignment="Top">
                 <TextBlock
                     FontFamily="Nunito-VariableFont_wght"
@@ -40,7 +41,6 @@
                     x:Name="LabelCreate"
                     FontStyle="Normal"
                     FontWeight="Medium"
-                    Text="efemfwaaafwe wmf okwem fokwokwemf komw\nerer"
                     Foreground="Gray"
                 />
             </Label>

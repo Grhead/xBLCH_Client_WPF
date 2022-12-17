@@ -15,14 +15,9 @@ namespace Client_BLCHxVote_WPF.Req
 {
     public class Service : BaseClass
     {
-        public Service()
-        {
-
-        }    
         public static Frame? frame;
         private static GrpcChannel Channel = GrpcChannel.ForAddress("http://127.0.0.1:7070");
         public static BLCH_Contract.BLCH_ContractClient Client = new BLCH_Contract.BLCH_ContractClient(Channel);
         internal static string privk;
-
     }
 }

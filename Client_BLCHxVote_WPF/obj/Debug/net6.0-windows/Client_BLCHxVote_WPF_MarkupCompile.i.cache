@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\forda\source\repos\Client_BLCHxVote_WPF\Client_BLCHxVote_WPF\App.xaml
 6-33864203
 
-171545418362
+18-2057347383
 204-2019083441
 MainWindow.xaml;Pages\AuthRepeatView.xaml;Pages\AuthStartView.xaml;Pages\VotingAfterView.xaml;Pages\VotingResultView.xaml;Pages\VotingStartView.xaml;
 
-False
+True
 

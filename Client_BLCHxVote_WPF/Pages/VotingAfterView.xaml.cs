@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Client_BLCHxVote_WPF.ViewModels;
 
 namespace Client_BLCHxVote_WPF.Views
 {
@@ -24,8 +25,8 @@ namespace Client_BLCHxVote_WPF.Views
         public VotingAfterView()
         {
             InitializeComponent();
-            this.DataContext = new ClientLogical();
-            LabelCreate.Text = ClientLogical.AllChain[number];
+            this.DataContext = new AfterLogic();
+            LabelCreate.Text = AfterLogic.AllChain[number];
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -33,25 +34,24 @@ namespace Client_BLCHxVote_WPF.Views
             number -= 1;
             if (number >= 0)
             {
-                LabelCreate.Text = ClientLogical.AllChain[number];
+                LabelCreate.Text = AfterLogic.AllChain[number];
             } else if (number < 0)
             {
                 number= 0;
-                LabelCreate.Text = ClientLogical.AllChain[number];
+                LabelCreate.Text = AfterLogic.AllChain[number];
             }
 
         }
-
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             number += 1;
-            if (number < ClientLogical.AllChain.Count && number >= 0)
+            if (number < AfterLogic.AllChain.Count && number >= 0)
             {
-                LabelCreate.Text = ClientLogical.AllChain[number];
+                LabelCreate.Text = AfterLogic.AllChain[number];
             } else
             {
-                number = ClientLogical.AllChain.Count - 1;
-                LabelCreate.Text = ClientLogical.AllChain[number];
+                number = AfterLogic.AllChain.Count - 1;
+                LabelCreate.Text = AfterLogic.AllChain[number];
             }
         }
     }
