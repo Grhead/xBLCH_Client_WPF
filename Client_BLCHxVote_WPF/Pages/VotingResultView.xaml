@@ -3,9 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:client_blchxvote_wpf="clr-namespace:Client_BLCHxVote_WPF"
-      d:DataContext="{d:DesignInstance Type=client_blchxvote_wpf:ClientLogical}"
-      xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
+      xmlns:client_blchxvote_wpf="clr-namespace:Client_BLCHxVote_WPF" d:DataContext="{d:DesignInstance Type=client_blchxvote_wpf:ClientLogical}"
       mc:Ignorable="d" 
       d:DesignHeight="750"
       d:DesignWidth="450"
@@ -28,23 +26,22 @@
                 Text="xVOTE 2022"
                 VerticalAlignment="Center" />
         </StackPanel>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel
+                Margin="0 70 0 0">
             <Image
-                MaxHeight="350"
-                MaxWidth="230"
-                Source="\Assets\NodesPNG.png" />
+                MaxWidth="170"
+                Source="\Assets\NodesPNG.png"
+                />
             <TextBlock
-                FontFamily="Nunito-VariableFont_wght"
-                FontSize="30"
-                FontStretch="Expanded"
-                FontStyle="Normal"
-                FontWeight="Medium"
                 HorizontalAlignment="Center"
-                Margin="0,20,0,0"
-                Name="Winner"
-                Text="{Binding Source=Королёв Александр Николаевич}"
-                TextAlignment="Center"
-                TextWrapping="Wrap"/>
+                VerticalAlignment="Bottom"
+                FontFamily="Nunito-VariableFont_wght"
+                FontSize="32"
+                FontStyle="Normal"
+                FontWeight="Regular"
+                Foreground="White"
+                Margin="0 20 0 0"
+                Text="{Binding SoloWinner}"/>
         </StackPanel>
     </Grid>
 </Page>

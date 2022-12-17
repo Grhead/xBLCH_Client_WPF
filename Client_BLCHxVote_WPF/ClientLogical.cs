@@ -20,6 +20,8 @@ using Newtonsoft.Json;
 using System.Globalization;
 using System.Timers;
 using System.Windows.Documents;
+using Google.Protobuf.WellKnownTypes;
+using System.Windows.Media.Animation;
 
 namespace Client_BLCHxVote_WPF
 {
@@ -28,10 +30,6 @@ namespace Client_BLCHxVote_WPF
         public ClientLogical()
         {
             AllChain = new List<string>();
-            if (new Service().TimeShow <= new TimeSpan(int.Parse("0")))
-            {
-                Service.frame.Navigate(new VotingResultView());
-            }
             var request = Service.Client.ChainPrint(new Wpar { });
             Console.WriteLine(request.InBlock);
             for (int i = 0; i < request.InBlock.Count; i++)
@@ -68,15 +66,18 @@ namespace Client_BLCHxVote_WPF
                 PublicK = PublicKText,
                 Salt = SaltText 
             });
-            if (reply.Distortion == true)
+            if (reply.Distortion == "1")
             {
                 Service.privk = PrivateKText;
                 GetCandidates();
                 Service.frame.Navigate(new VotingStartView());
             }
-            else
+            else if (reply.Distortion == "0")
             {
                 MessageBox.Show("Error");
+            } else
+            {
+                Service.frame.Navigate(new VotingResultView());
             }
         });
         public RelayCommand StartCommand => _startCommand ??= new RelayCommand(x =>
@@ -86,15 +87,19 @@ namespace Client_BLCHxVote_WPF
                 PrivateK = PrivateKText,
                 PublicK = PublicKText
             });
-            if (reply.Distortion == true)
+            if (reply.Distortion == "1")
             {
                 Service.privk = PrivateKText;
                 GetCandidates();
                 Service.frame.Navigate(new VotingStartView());
             }
-            else
+            else if (reply.Distortion == "0")
             {
                 MessageBox.Show("Error");
+            }
+            else
+            {
+                Service.frame.Navigate(new VotingResultView());
             }
         });
         public RelayCommand VoteCommand => _voteCommand ??= new RelayCommand(x =>
@@ -135,6 +140,53 @@ namespace Client_BLCHxVote_WPF
                 CandidatesView.Add(response);
             }
         }
-        
+        private string _soloWinner;
+        public string SoloWinner
+        {
+            get
+            {
+                return _soloWinner;
+            }
+            set
+            {
+                _soloWinner = value;
+                OnPropertyChanged();
+            }
+        }
+        private static List<CandidateListWithBalance> _balanceView;
+        public static List<CandidateListWithBalance> BalanceView
+        {
+            get { return _balanceView; }
+            set { _balanceView = value; }
+        }
+        public async void GetProcent()
+        {
+            var cw = Service.Client.ResultsWinner(new Wpar { });
+            await foreach (var response in cw.ResponseStream.ReadAllAsync())
+            {
+                BalanceView.Add(response);
+            }
+            SoloWinner = GetProcentName();
+        }
+        private static string GetProcentName()
+        {
+            var solowinner = Service.Client.SoloWinner(new Wpar { });
+            return solowinner.CandidateName;
+        }
+        private string _timel;
+        public string Timel
+        {
+            get { return _timel; }
+            set { _timel = value; OnPropertyChanged(); }
+        }
+        public static async void TimeExtensions()
+        {
+            var classForTime = new ClientLogical();
+            var t = Service.Client.TimeBlock(new Wpar { });
+            await foreach (var response in t.ResponseStream.ReadAllAsync())
+            {
+                classForTime.Timel = response.EndTime.ToString();
+            }
+        }
     }
 }

@@ -29,7 +29,7 @@ namespace Client_BLCHxVote_WPF {
             "YXRlTmFtZRgCIAEoCRIPCgdiYWxhbmNlGAMgASgJIjoKB1JlZ0RhdGESEAoI",
             "UGFzc3BvcnQYASABKAkSDwoHUHVibGljSxgCIAEoCRIMCgRTYWx0GAMgASgJ",
             "Ii0KCEF1dGhEYXRhEg8KB1B1YmxpY0sYASABKAkSEAoIUHJpdmF0ZUsYAiAB",
-            "KAkiIwoNQXV0aFJlZ1Jlc3VsdBISCgpEaXN0b3J0aW9uGAEgASgIIgYKBFdw",
+            "KAkiIwoNQXV0aFJlZ1Jlc3VsdBISCgpEaXN0b3J0aW9uGAEgASgJIgYKBFdw",
             "YXIiHAoMUmVzcG9uc2VTaXplEgwKBHNpemUYASABKAkiGwoHQWRkcmVzcxIQ",
             "Cgh1c2VyYWRychgBIAEoCSIXCgRMYW5iEg8KB2JhbGFuY2UYASABKAkiGAoF",
             "Q2hhaW4SDwoHSW5CbG9jaxgBIAMoCSI7Cg1DYW5kaWRhdGVMaXN0EhMKC2Nh",
@@ -37,22 +37,23 @@ namespace Client_BLCHxVote_WPF {
             "RGF0YRIVCg1Vc2VyQ2FuZGlkYXRlGAEgASgJEgsKA251bRgCIAEoBBIPCgdw",
             "cml2YXRlGAMgASgJIjIKDExvd0RhdGFDaGFpbhIVCg1Vc2VyQ2FuZGlkYXRl",
             "GAEgASgJEgsKA251bRgCIAEoBCIZCgtJc0NvbXBsaXRlZBIKCgJpYxgBIAEo",
-            "CCIgCgxCbG9ja0RhdGFHZXQSEAoIQmxvY2tOdW0YASABKAkiLwoJQmxvY2tE",
-            "YXRhEhEKCUluZm9CbG9jaxgBIAEoCRIPCgdFbmRUaW1lGAIgASgJMsIECg1C",
-            "TENIX0NvbnRyYWN0EjoKDEF1dGhSZWdpc3RlchIRLkNvbnRyYWN0LlJlZ0Rh",
-            "dGEaFy5Db250cmFjdC5BdXRoUmVnUmVzdWx0EjgKCUF1dGhMb2dpbhISLkNv",
-            "bnRyYWN0LkF1dGhEYXRhGhcuQ29udHJhY3QuQXV0aFJlZ1Jlc3VsdBIzCglD",
-            "aGFpblNpemUSDi5Db250cmFjdC5XcGFyGhYuQ29udHJhY3QuUmVzcG9uc2VT",
-            "aXplEiwKB0JhbGFuY2USES5Db250cmFjdC5BZGRyZXNzGg4uQ29udHJhY3Qu",
-            "TGFuYhI7Cg5WaWV3Q2FuZGlkYXRlcxIOLkNvbnRyYWN0LldwYXIaFy5Db250",
-            "cmFjdC5DYW5kaWRhdGVMaXN0MAESOQoIVHJhbnNmZXISFi5Db250cmFjdC5M",
-            "b3dEYXRhQ2hhaW4aFS5Db250cmFjdC5Jc0NvbXBsaXRlZBIwCgRWb3RlEhEu",
-            "Q29udHJhY3QuTG93RGF0YRoVLkNvbnRyYWN0LklzQ29tcGxpdGVkEjgKCVRp",
-            "bWVCbG9jaxIWLkNvbnRyYWN0LkJsb2NrRGF0YUdldBoTLkNvbnRyYWN0LkJs",
-            "b2NrRGF0YRItCgpDaGFpblByaW50Eg4uQ29udHJhY3QuV3BhchoPLkNvbnRy",
-            "YWN0LkNoYWluEkUKDVJlc3VsdHNXaW5uZXISDi5Db250cmFjdC5XcGFyGiIu",
-            "Q29udHJhY3QuQ2FuZGlkYXRlTGlzdFdpdGhCYWxhbmNlMAFCF6oCFENsaWVu",
-            "dF9CTENIeFZvdGVfV1BGYgZwcm90bzM="));
+            "CCIgCgxCbG9ja0RhdGFHZXQSEAoIQmxvY2tOdW0YASABKAkiGwoIVGltZURh",
+            "dGESDwoHRW5kVGltZRgBIAEoCTLyBAoNQkxDSF9Db250cmFjdBI6CgxBdXRo",
+            "UmVnaXN0ZXISES5Db250cmFjdC5SZWdEYXRhGhcuQ29udHJhY3QuQXV0aFJl",
+            "Z1Jlc3VsdBI4CglBdXRoTG9naW4SEi5Db250cmFjdC5BdXRoRGF0YRoXLkNv",
+            "bnRyYWN0LkF1dGhSZWdSZXN1bHQSMwoJQ2hhaW5TaXplEg4uQ29udHJhY3Qu",
+            "V3BhchoWLkNvbnRyYWN0LlJlc3BvbnNlU2l6ZRIsCgdCYWxhbmNlEhEuQ29u",
+            "dHJhY3QuQWRkcmVzcxoOLkNvbnRyYWN0LkxhbmISOwoOVmlld0NhbmRpZGF0",
+            "ZXMSDi5Db250cmFjdC5XcGFyGhcuQ29udHJhY3QuQ2FuZGlkYXRlTGlzdDAB",
+            "EjkKCFRyYW5zZmVyEhYuQ29udHJhY3QuTG93RGF0YUNoYWluGhUuQ29udHJh",
+            "Y3QuSXNDb21wbGl0ZWQSMAoEVm90ZRIRLkNvbnRyYWN0Lkxvd0RhdGEaFS5D",
+            "b250cmFjdC5Jc0NvbXBsaXRlZBIxCglUaW1lQmxvY2sSDi5Db250cmFjdC5X",
+            "cGFyGhIuQ29udHJhY3QuVGltZURhdGEwARItCgpDaGFpblByaW50Eg4uQ29u",
+            "dHJhY3QuV3BhchoPLkNvbnRyYWN0LkNoYWluEkUKDVJlc3VsdHNXaW5uZXIS",
+            "Di5Db250cmFjdC5XcGFyGiIuQ29udHJhY3QuQ2FuZGlkYXRlTGlzdFdpdGhC",
+            "YWxhbmNlMAESNQoKU29sb1dpbm5lchIOLkNvbnRyYWN0LldwYXIaFy5Db250",
+            "cmFjdC5DYW5kaWRhdGVMaXN0QheqAhRDbGllbnRfQkxDSHhWb3RlX1dQRmIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -70,7 +71,7 @@ namespace Client_BLCHxVote_WPF {
             new pbr::GeneratedClrTypeInfo(typeof(global::Client_BLCHxVote_WPF.LowDataChain), global::Client_BLCHxVote_WPF.LowDataChain.Parser, new[]{ "UserCandidate", "Num" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Client_BLCHxVote_WPF.IsComplited), global::Client_BLCHxVote_WPF.IsComplited.Parser, new[]{ "Ic" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Client_BLCHxVote_WPF.BlockDataGet), global::Client_BLCHxVote_WPF.BlockDataGet.Parser, new[]{ "BlockNum" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Client_BLCHxVote_WPF.BlockData), global::Client_BLCHxVote_WPF.BlockData.Parser, new[]{ "InfoBlock", "EndTime" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Client_BLCHxVote_WPF.TimeData), global::Client_BLCHxVote_WPF.TimeData.Parser, new[]{ "EndTime" }, null, null, null, null)
           }));
     }
     #endregion
@@ -875,13 +876,13 @@ namespace Client_BLCHxVote_WPF {
 
     /// <summary>Field number for the "Distortion" field.</summary>
     public const int DistortionFieldNumber = 1;
-    private bool distortion_;
+    private string distortion_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Distortion {
+    public string Distortion {
       get { return distortion_; }
       set {
-        distortion_ = value;
+        distortion_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -908,7 +909,7 @@ namespace Client_BLCHxVote_WPF {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Distortion != false) hash ^= Distortion.GetHashCode();
+      if (Distortion.Length != 0) hash ^= Distortion.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -927,9 +928,9 @@ namespace Client_BLCHxVote_WPF {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Distortion != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(Distortion);
+      if (Distortion.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Distortion);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -941,9 +942,9 @@ namespace Client_BLCHxVote_WPF {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Distortion != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(Distortion);
+      if (Distortion.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Distortion);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -955,8 +956,8 @@ namespace Client_BLCHxVote_WPF {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Distortion != false) {
-        size += 1 + 1;
+      if (Distortion.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Distortion);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -970,7 +971,7 @@ namespace Client_BLCHxVote_WPF {
       if (other == null) {
         return;
       }
-      if (other.Distortion != false) {
+      if (other.Distortion.Length != 0) {
         Distortion = other.Distortion;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -988,8 +989,8 @@ namespace Client_BLCHxVote_WPF {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Distortion = input.ReadBool();
+          case 10: {
+            Distortion = input.ReadString();
             break;
           }
         }
@@ -1007,8 +1008,8 @@ namespace Client_BLCHxVote_WPF {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            Distortion = input.ReadBool();
+          case 10: {
+            Distortion = input.ReadString();
             break;
           }
         }
@@ -3008,16 +3009,16 @@ namespace Client_BLCHxVote_WPF {
 
   }
 
-  public sealed partial class BlockData : pb::IMessage<BlockData>
+  public sealed partial class TimeData : pb::IMessage<TimeData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<BlockData> _parser = new pb::MessageParser<BlockData>(() => new BlockData());
+    private static readonly pb::MessageParser<TimeData> _parser = new pb::MessageParser<TimeData>(() => new TimeData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<BlockData> Parser { get { return _parser; } }
+    public static pb::MessageParser<TimeData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3033,7 +3034,7 @@ namespace Client_BLCHxVote_WPF {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public BlockData() {
+    public TimeData() {
       OnConstruction();
     }
 
@@ -3041,32 +3042,19 @@ namespace Client_BLCHxVote_WPF {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public BlockData(BlockData other) : this() {
-      infoBlock_ = other.infoBlock_;
+    public TimeData(TimeData other) : this() {
       endTime_ = other.endTime_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public BlockData Clone() {
-      return new BlockData(this);
-    }
-
-    /// <summary>Field number for the "InfoBlock" field.</summary>
-    public const int InfoBlockFieldNumber = 1;
-    private string infoBlock_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string InfoBlock {
-      get { return infoBlock_; }
-      set {
-        infoBlock_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
+    public TimeData Clone() {
+      return new TimeData(this);
     }
 
     /// <summary>Field number for the "EndTime" field.</summary>
-    public const int EndTimeFieldNumber = 2;
+    public const int EndTimeFieldNumber = 1;
     private string endTime_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3080,19 +3068,18 @@ namespace Client_BLCHxVote_WPF {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as BlockData);
+      return Equals(other as TimeData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(BlockData other) {
+    public bool Equals(TimeData other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (InfoBlock != other.InfoBlock) return false;
       if (EndTime != other.EndTime) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3101,7 +3088,6 @@ namespace Client_BLCHxVote_WPF {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (InfoBlock.Length != 0) hash ^= InfoBlock.GetHashCode();
       if (EndTime.Length != 0) hash ^= EndTime.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3121,12 +3107,8 @@ namespace Client_BLCHxVote_WPF {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (InfoBlock.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(InfoBlock);
-      }
       if (EndTime.Length != 0) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(10);
         output.WriteString(EndTime);
       }
       if (_unknownFields != null) {
@@ -3139,12 +3121,8 @@ namespace Client_BLCHxVote_WPF {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (InfoBlock.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(InfoBlock);
-      }
       if (EndTime.Length != 0) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(10);
         output.WriteString(EndTime);
       }
       if (_unknownFields != null) {
@@ -3157,9 +3135,6 @@ namespace Client_BLCHxVote_WPF {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (InfoBlock.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(InfoBlock);
-      }
       if (EndTime.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(EndTime);
       }
@@ -3171,12 +3146,9 @@ namespace Client_BLCHxVote_WPF {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(BlockData other) {
+    public void MergeFrom(TimeData other) {
       if (other == null) {
         return;
-      }
-      if (other.InfoBlock.Length != 0) {
-        InfoBlock = other.InfoBlock;
       }
       if (other.EndTime.Length != 0) {
         EndTime = other.EndTime;
@@ -3197,10 +3169,6 @@ namespace Client_BLCHxVote_WPF {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            InfoBlock = input.ReadString();
-            break;
-          }
-          case 18: {
             EndTime = input.ReadString();
             break;
           }
@@ -3220,10 +3188,6 @@ namespace Client_BLCHxVote_WPF {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            InfoBlock = input.ReadString();
-            break;
-          }
-          case 18: {
             EndTime = input.ReadString();
             break;
           }

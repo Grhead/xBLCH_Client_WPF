@@ -23,7 +23,7 @@ namespace Client_BLCHxVote_WPF.Views
         public VotingStartView()
         {
             InitializeComponent();
-            this.DataContext = new Service();
+            //this.DataContext = new ClientLogical();
             foreach (var item in ClientLogical.CandidatesView)
             {
                 CandidatesListTier.Items.Add(item.CandidateName);

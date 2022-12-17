@@ -38,7 +38,10 @@
                     FontSize="14"
                     TextWrapping="Wrap"
                     x:Name="LabelCreate"
+                    FontStyle="Normal"
+                    FontWeight="Medium"
                     Text="efemfwaaafwe wmf okwem fokwokwemf komw\nerer"
+                    Foreground="Gray"
                 />
             </Label>
             <StackPanel

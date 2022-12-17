@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Syncfusion.UI.Xaml.Charts;
 
 namespace Client_BLCHxVote_WPF.Views
 {
@@ -24,7 +23,7 @@ namespace Client_BLCHxVote_WPF.Views
         public VotingResultView()
         {
             InitializeComponent();
-            this.DataContext = new ResultLogic();
+            this.DataContext = new ClientLogical();
         }
     }
 }

@@ -26,7 +26,8 @@ namespace Client_BLCHxVote_WPF
         {
             InitializeComponent();
             Service.frame = MainActivity;
-            DataContext = new InitLogic();
+            this.DataContext = new InitLogic();
+            //this.DataContext = new ResultLogic();
         }
     }
 }

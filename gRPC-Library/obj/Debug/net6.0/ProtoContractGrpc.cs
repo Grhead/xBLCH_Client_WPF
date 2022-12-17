@@ -68,9 +68,7 @@ namespace Client_BLCHxVote_WPF {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Client_BLCHxVote_WPF.LowData> __Marshaller_Contract_LowData = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Client_BLCHxVote_WPF.LowData.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Client_BLCHxVote_WPF.BlockDataGet> __Marshaller_Contract_BlockDataGet = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Client_BLCHxVote_WPF.BlockDataGet.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Client_BLCHxVote_WPF.BlockData> __Marshaller_Contract_BlockData = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Client_BLCHxVote_WPF.BlockData.Parser));
+    static readonly grpc::Marshaller<global::Client_BLCHxVote_WPF.TimeData> __Marshaller_Contract_TimeData = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Client_BLCHxVote_WPF.TimeData.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Client_BLCHxVote_WPF.Chain> __Marshaller_Contract_Chain = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Client_BLCHxVote_WPF.Chain.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -133,12 +131,12 @@ namespace Client_BLCHxVote_WPF {
         __Marshaller_Contract_IsComplited);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Client_BLCHxVote_WPF.BlockDataGet, global::Client_BLCHxVote_WPF.BlockData> __Method_TimeBlock = new grpc::Method<global::Client_BLCHxVote_WPF.BlockDataGet, global::Client_BLCHxVote_WPF.BlockData>(
-        grpc::MethodType.Unary,
+    static readonly grpc::Method<global::Client_BLCHxVote_WPF.Wpar, global::Client_BLCHxVote_WPF.TimeData> __Method_TimeBlock = new grpc::Method<global::Client_BLCHxVote_WPF.Wpar, global::Client_BLCHxVote_WPF.TimeData>(
+        grpc::MethodType.ServerStreaming,
         __ServiceName,
         "TimeBlock",
-        __Marshaller_Contract_BlockDataGet,
-        __Marshaller_Contract_BlockData);
+        __Marshaller_Contract_Wpar,
+        __Marshaller_Contract_TimeData);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Client_BLCHxVote_WPF.Wpar, global::Client_BLCHxVote_WPF.Chain> __Method_ChainPrint = new grpc::Method<global::Client_BLCHxVote_WPF.Wpar, global::Client_BLCHxVote_WPF.Chain>(
@@ -155,6 +153,14 @@ namespace Client_BLCHxVote_WPF {
         "ResultsWinner",
         __Marshaller_Contract_Wpar,
         __Marshaller_Contract_CandidateListWithBalance);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Client_BLCHxVote_WPF.Wpar, global::Client_BLCHxVote_WPF.CandidateList> __Method_SoloWinner = new grpc::Method<global::Client_BLCHxVote_WPF.Wpar, global::Client_BLCHxVote_WPF.CandidateList>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SoloWinner",
+        __Marshaller_Contract_Wpar,
+        __Marshaller_Contract_CandidateList);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -446,52 +452,28 @@ namespace Client_BLCHxVote_WPF {
         return CallInvoker.AsyncUnaryCall(__Method_Vote, null, options, request);
       }
       /// <summary>
-      ///время начала голосования
+      ///время до конца голосования
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Client_BLCHxVote_WPF.BlockData TimeBlock(global::Client_BLCHxVote_WPF.BlockDataGet request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Client_BLCHxVote_WPF.TimeData> TimeBlock(global::Client_BLCHxVote_WPF.Wpar request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return TimeBlock(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///время начала голосования
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Client_BLCHxVote_WPF.BlockData TimeBlock(global::Client_BLCHxVote_WPF.BlockDataGet request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_TimeBlock, null, options, request);
-      }
-      /// <summary>
-      ///время начала голосования
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Client_BLCHxVote_WPF.BlockData> TimeBlockAsync(global::Client_BLCHxVote_WPF.BlockDataGet request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return TimeBlockAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///время начала голосования
+      ///время до конца голосования
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Client_BLCHxVote_WPF.BlockData> TimeBlockAsync(global::Client_BLCHxVote_WPF.BlockDataGet request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Client_BLCHxVote_WPF.TimeData> TimeBlock(global::Client_BLCHxVote_WPF.Wpar request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_TimeBlock, null, options, request);
+        return CallInvoker.AsyncServerStreamingCall(__Method_TimeBlock, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Client_BLCHxVote_WPF.Chain ChainPrint(global::Client_BLCHxVote_WPF.Wpar request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
@@ -522,6 +504,26 @@ namespace Client_BLCHxVote_WPF {
       public virtual grpc::AsyncServerStreamingCall<global::Client_BLCHxVote_WPF.CandidateListWithBalance> ResultsWinner(global::Client_BLCHxVote_WPF.Wpar request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_ResultsWinner, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Client_BLCHxVote_WPF.CandidateList SoloWinner(global::Client_BLCHxVote_WPF.Wpar request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SoloWinner(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Client_BLCHxVote_WPF.CandidateList SoloWinner(global::Client_BLCHxVote_WPF.Wpar request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SoloWinner, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Client_BLCHxVote_WPF.CandidateList> SoloWinnerAsync(global::Client_BLCHxVote_WPF.Wpar request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SoloWinnerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Client_BLCHxVote_WPF.CandidateList> SoloWinnerAsync(global::Client_BLCHxVote_WPF.Wpar request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SoloWinner, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

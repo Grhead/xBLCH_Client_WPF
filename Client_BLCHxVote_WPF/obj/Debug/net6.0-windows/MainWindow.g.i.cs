@@ -10,6 +10,7 @@
 //------------------------------------------------------------------------------
 
 using Client_BLCHxVote_WPF;
+using ScottPlot;
 using System;
 using System.Diagnostics;
 using System.Windows;

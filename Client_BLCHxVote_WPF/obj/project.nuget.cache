@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AhZiwQ8W1nburuAwbR1qOzqX/WfvTAyAoy2bN92hnrAyPenzJ1pjRxPUi9emUSyM939muAEMGBYAGe+ARPpzwA==",
+  "dgSpecHash": "F56H0sbfSYJ4zfGmWMw78bt/ABbgSELMwp0DidY+JPLaq22o6asfYgSRMnQQMYKXbEvGzKb7yAinEuRb/5ZhiA==",
   "success": true,
   "projectFilePath": "C:\\Users\\forda\\source\\repos\\Client_BLCHxVote_WPF\\Client_BLCHxVote_WPF\\Client_BLCHxVote_WPF.csproj",
   "expectedPackageFiles": [
@@ -11,10 +11,14 @@
     "C:\\Users\\forda\\.nuget\\packages\\grpc.net.common\\2.50.0\\grpc.net.common.2.50.0.nupkg.sha512",
     "C:\\Users\\forda\\.nuget\\packages\\grpc.tools\\2.51.0\\grpc.tools.2.51.0.nupkg.sha512",
     "C:\\Users\\forda\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.3\\microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\forda\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
+    "C:\\Users\\forda\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
     "C:\\Users\\forda\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
-    "C:\\Users\\forda\\.nuget\\packages\\syncfusion.licensing\\20.3.0.61\\syncfusion.licensing.20.3.0.61.nupkg.sha512",
-    "C:\\Users\\forda\\.nuget\\packages\\syncfusion.sfchart.wpf\\20.3.0.61\\syncfusion.sfchart.wpf.20.3.0.61.nupkg.sha512",
-    "C:\\Users\\forda\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+    "C:\\Users\\forda\\.nuget\\packages\\scottplot\\4.1.59\\scottplot.4.1.59.nupkg.sha512",
+    "C:\\Users\\forda\\.nuget\\packages\\scottplot.wpf\\4.1.59\\scottplot.wpf.4.1.59.nupkg.sha512",
+    "C:\\Users\\forda\\.nuget\\packages\\system.drawing.common\\4.6.1\\system.drawing.common.4.6.1.nupkg.sha512",
+    "C:\\Users\\forda\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\forda\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
