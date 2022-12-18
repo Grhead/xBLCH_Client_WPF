@@ -36,7 +36,8 @@
                 Name="BlockAdress"
                 Text="{Binding Path=PublicKText}"
                 TextWrapping="NoWrap" 
-                PreviewKeyDown="BlockAdress_PreviewKeyDown"/>
+                PreviewKeyDown="BlockAdress_PreviewKeyDown"
+                PreviewTextInput="BlockAdress_PreviewTextInput"/>
             <TextBlock
                 FontFamily="Nunito-VariableFont_wght"
                 FontSize="19"
@@ -57,7 +58,8 @@
                 Name="BlockCode"
                 Text="{Binding Path=PrivateKText}"
                 TextWrapping="NoWrap"
-                PreviewKeyDown="BlockAdress_PreviewKeyDown"/>
+                PreviewKeyDown="BlockAdress_PreviewKeyDown"
+                PreviewTextInput="BlockAdress_PreviewTextInput"/>
             <Button
                 Background="#4F6C77"
                 Content="Войти"

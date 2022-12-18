@@ -34,6 +34,16 @@ namespace Client_BLCHxVote_WPF.Views
                 e.Handled = true;
             }
         }
+        private void BlockAdress_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+
+            int i = 0;
+            bool result = int.TryParse(e.Text.ToString(), out i);
+            if (!result && (e.Text[0] < 'a' || e.Text[0] > 'z') && (e.Text[0] < 'A' || e.Text[0] > 'Z') && (e.Text[0] < '9' || e.Text[0] > '1'))
+            {
+                e.Handled = true;
+            }
+        }
     }
 
 }

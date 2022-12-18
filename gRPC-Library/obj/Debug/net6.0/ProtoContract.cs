@@ -37,23 +37,23 @@ namespace Client_BLCHxVote_WPF {
             "RGF0YRIVCg1Vc2VyQ2FuZGlkYXRlGAEgASgJEgsKA251bRgCIAEoBBIPCgdw",
             "cml2YXRlGAMgASgJIjIKDExvd0RhdGFDaGFpbhIVCg1Vc2VyQ2FuZGlkYXRl",
             "GAEgASgJEgsKA251bRgCIAEoBCIZCgtJc0NvbXBsaXRlZBIKCgJpYxgBIAEo",
-            "CCIgCgxCbG9ja0RhdGFHZXQSEAoIQmxvY2tOdW0YASABKAkiGwoIVGltZURh",
-            "dGESDwoHRW5kVGltZRgBIAEoCTLyBAoNQkxDSF9Db250cmFjdBI6CgxBdXRo",
-            "UmVnaXN0ZXISES5Db250cmFjdC5SZWdEYXRhGhcuQ29udHJhY3QuQXV0aFJl",
-            "Z1Jlc3VsdBI4CglBdXRoTG9naW4SEi5Db250cmFjdC5BdXRoRGF0YRoXLkNv",
-            "bnRyYWN0LkF1dGhSZWdSZXN1bHQSMwoJQ2hhaW5TaXplEg4uQ29udHJhY3Qu",
-            "V3BhchoWLkNvbnRyYWN0LlJlc3BvbnNlU2l6ZRIsCgdCYWxhbmNlEhEuQ29u",
-            "dHJhY3QuQWRkcmVzcxoOLkNvbnRyYWN0LkxhbmISOwoOVmlld0NhbmRpZGF0",
-            "ZXMSDi5Db250cmFjdC5XcGFyGhcuQ29udHJhY3QuQ2FuZGlkYXRlTGlzdDAB",
-            "EjkKCFRyYW5zZmVyEhYuQ29udHJhY3QuTG93RGF0YUNoYWluGhUuQ29udHJh",
-            "Y3QuSXNDb21wbGl0ZWQSMAoEVm90ZRIRLkNvbnRyYWN0Lkxvd0RhdGEaFS5D",
-            "b250cmFjdC5Jc0NvbXBsaXRlZBIxCglUaW1lQmxvY2sSDi5Db250cmFjdC5X",
-            "cGFyGhIuQ29udHJhY3QuVGltZURhdGEwARItCgpDaGFpblByaW50Eg4uQ29u",
-            "dHJhY3QuV3BhchoPLkNvbnRyYWN0LkNoYWluEkUKDVJlc3VsdHNXaW5uZXIS",
-            "Di5Db250cmFjdC5XcGFyGiIuQ29udHJhY3QuQ2FuZGlkYXRlTGlzdFdpdGhC",
-            "YWxhbmNlMAESNQoKU29sb1dpbm5lchIOLkNvbnRyYWN0LldwYXIaFy5Db250",
-            "cmFjdC5DYW5kaWRhdGVMaXN0QheqAhRDbGllbnRfQkxDSHhWb3RlX1dQRmIG",
-            "cHJvdG8z"));
+            "CCIdCg9Jc0NvbXBsaXRlZFZvdGUSCgoCaWMYASABKAkiIAoMQmxvY2tEYXRh",
+            "R2V0EhAKCEJsb2NrTnVtGAEgASgJIhsKCFRpbWVEYXRhEg8KB0VuZFRpbWUY",
+            "ASABKAky9gQKDUJMQ0hfQ29udHJhY3QSOgoMQXV0aFJlZ2lzdGVyEhEuQ29u",
+            "dHJhY3QuUmVnRGF0YRoXLkNvbnRyYWN0LkF1dGhSZWdSZXN1bHQSOAoJQXV0",
+            "aExvZ2luEhIuQ29udHJhY3QuQXV0aERhdGEaFy5Db250cmFjdC5BdXRoUmVn",
+            "UmVzdWx0EjMKCUNoYWluU2l6ZRIOLkNvbnRyYWN0LldwYXIaFi5Db250cmFj",
+            "dC5SZXNwb25zZVNpemUSLAoHQmFsYW5jZRIRLkNvbnRyYWN0LkFkZHJlc3Ma",
+            "Di5Db250cmFjdC5MYW5iEjsKDlZpZXdDYW5kaWRhdGVzEg4uQ29udHJhY3Qu",
+            "V3BhchoXLkNvbnRyYWN0LkNhbmRpZGF0ZUxpc3QwARI5CghUcmFuc2ZlchIW",
+            "LkNvbnRyYWN0Lkxvd0RhdGFDaGFpbhoVLkNvbnRyYWN0LklzQ29tcGxpdGVk",
+            "EjQKBFZvdGUSES5Db250cmFjdC5Mb3dEYXRhGhkuQ29udHJhY3QuSXNDb21w",
+            "bGl0ZWRWb3RlEjEKCVRpbWVCbG9jaxIOLkNvbnRyYWN0LldwYXIaEi5Db250",
+            "cmFjdC5UaW1lRGF0YTABEi0KCkNoYWluUHJpbnQSDi5Db250cmFjdC5XcGFy",
+            "Gg8uQ29udHJhY3QuQ2hhaW4SRQoNUmVzdWx0c1dpbm5lchIOLkNvbnRyYWN0",
+            "LldwYXIaIi5Db250cmFjdC5DYW5kaWRhdGVMaXN0V2l0aEJhbGFuY2UwARI1",
+            "CgpTb2xvV2lubmVyEg4uQ29udHJhY3QuV3BhchoXLkNvbnRyYWN0LkNhbmRp",
+            "ZGF0ZUxpc3RCF6oCFENsaWVudF9CTENIeFZvdGVfV1BGYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -70,6 +70,7 @@ namespace Client_BLCHxVote_WPF {
             new pbr::GeneratedClrTypeInfo(typeof(global::Client_BLCHxVote_WPF.LowData), global::Client_BLCHxVote_WPF.LowData.Parser, new[]{ "UserCandidate", "Num", "Private" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Client_BLCHxVote_WPF.LowDataChain), global::Client_BLCHxVote_WPF.LowDataChain.Parser, new[]{ "UserCandidate", "Num" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Client_BLCHxVote_WPF.IsComplited), global::Client_BLCHxVote_WPF.IsComplited.Parser, new[]{ "Ic" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Client_BLCHxVote_WPF.IsComplitedVote), global::Client_BLCHxVote_WPF.IsComplitedVote.Parser, new[]{ "Ic" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Client_BLCHxVote_WPF.BlockDataGet), global::Client_BLCHxVote_WPF.BlockDataGet.Parser, new[]{ "BlockNum" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Client_BLCHxVote_WPF.TimeData), global::Client_BLCHxVote_WPF.TimeData.Parser, new[]{ "EndTime" }, null, null, null, null)
           }));
@@ -2820,6 +2821,195 @@ namespace Client_BLCHxVote_WPF {
 
   }
 
+  public sealed partial class IsComplitedVote : pb::IMessage<IsComplitedVote>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<IsComplitedVote> _parser = new pb::MessageParser<IsComplitedVote>(() => new IsComplitedVote());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<IsComplitedVote> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Client_BLCHxVote_WPF.ProtoContractReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public IsComplitedVote() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public IsComplitedVote(IsComplitedVote other) : this() {
+      ic_ = other.ic_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public IsComplitedVote Clone() {
+      return new IsComplitedVote(this);
+    }
+
+    /// <summary>Field number for the "ic" field.</summary>
+    public const int IcFieldNumber = 1;
+    private string ic_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Ic {
+      get { return ic_; }
+      set {
+        ic_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as IsComplitedVote);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(IsComplitedVote other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Ic != other.Ic) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Ic.Length != 0) hash ^= Ic.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Ic.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Ic);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Ic.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Ic);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Ic.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Ic);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(IsComplitedVote other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Ic.Length != 0) {
+        Ic = other.Ic;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Ic = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Ic = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class BlockDataGet : pb::IMessage<BlockDataGet>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2834,7 +3024,7 @@ namespace Client_BLCHxVote_WPF {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Client_BLCHxVote_WPF.ProtoContractReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Client_BLCHxVote_WPF.ProtoContractReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3023,7 +3213,7 @@ namespace Client_BLCHxVote_WPF {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Client_BLCHxVote_WPF.ProtoContractReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Client_BLCHxVote_WPF.ProtoContractReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

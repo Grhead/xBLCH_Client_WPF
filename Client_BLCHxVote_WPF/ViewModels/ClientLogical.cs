@@ -9,6 +9,7 @@ using Newtonsoft.Json.Linq;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Threading;
+using System.Xml.Linq;
 
 namespace Client_BLCHxVote_WPF.ViewModels
 {
@@ -36,6 +37,12 @@ namespace Client_BLCHxVote_WPF.ViewModels
             await foreach (var response in t.ResponseStream.ReadAllAsync())
             {
                 TimeShow = response.EndTime.ToString();
+                TimeShow = TimeShow.Replace('s', ' ');
+                TimeShow = TimeShow.Replace('m', ':');
+                TimeShow = TimeShow.Replace('h', ':');
+                int foundS1 = TimeShow.IndexOf(".");
+                TimeShow = TimeShow.Remove(foundS1);
+
                 if (TimeShow == "Empty")
                 {
                     cancellationToken.Cancel();
@@ -60,10 +67,14 @@ namespace Client_BLCHxVote_WPF.ViewModels
         public RelayCommand VoteCommand => _voteCommand ??= new RelayCommand(x =>
         {
             CandidateList sel = new() { CandidatePK = "0", CandidateName = "0" };
-            IsComplited bos = new IsComplited { Ic = false };
+            IsComplitedVote bos = new IsComplitedVote { Ic = "false" };
             if (SelectedItem != null)
             {
                 sel = SelectedItem;
+            }
+            else
+            {
+                MessageBox.Show("Кандидат не выбран");
             }
             if (sel.CandidateName != "0" || sel.CandidatePK != "0")
             {
@@ -73,11 +84,14 @@ namespace Client_BLCHxVote_WPF.ViewModels
                     Private = Service.privk,
                     Num = 1
                 });
-                if (bos.Ic == true)
+                if (bos.Ic == "true")
                 {
                     Service.frame.Navigate(new VotingAfterView());
                 }
-                else
+                else if (bos.Ic == "true")
+                {
+                    MessageBox.Show("Нет голоса");
+                } else
                 {
                     MessageBox.Show("Error");
                 }

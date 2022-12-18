@@ -42,6 +42,10 @@ namespace Client_BLCHxVote_WPF.ViewModels
         private static string GetProcentName()
         {
             var solowinner = Service.Client.SoloWinner(new Wpar { });
+            if (solowinner.CandidatePK == "0")
+            {
+                return "Перевыборы запланированы";
+            }
             return solowinner.CandidateName;
         }
     }

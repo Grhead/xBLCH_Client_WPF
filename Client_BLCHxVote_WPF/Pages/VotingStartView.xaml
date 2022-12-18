@@ -31,9 +31,11 @@
         </StackPanel>
         <StackPanel Margin="0,80,0,0">
             <TextBlock
-                Background="#EAEEEF"
+                Background="Transparent"
+                MinWidth="250"
                 FontFamily="Nunito-VariableFont_wght"
-                FontSize="20"
+                TextAlignment="Center"
+                FontSize="28"
                 FontStyle="Normal"
                 Foreground="Black"
                 HorizontalAlignment="Center"

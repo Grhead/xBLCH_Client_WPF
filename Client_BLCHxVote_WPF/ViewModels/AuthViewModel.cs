@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Diagnostics;
 
 namespace Client_BLCHxVote_WPF.ViewModels
 {
@@ -18,46 +19,96 @@ namespace Client_BLCHxVote_WPF.ViewModels
         });
         public RelayCommand CreateCommand => _createCommand ??= new RelayCommand(x =>
         {
-            var reply = Service.Client.AuthRegister(new RegData
+            if (PassText == null && PublicKText == null && SaltText == null)
             {
-                Passport = PassText,
-                PublicK = PublicKText,
-                Salt = SaltText
-            });
-            if (reply.Distortion == "1")
-            {
-                Service.privk = PrivateKText;
-                Service.frame.Navigate(new VotingStartView());
+                MessageBox.Show("Поля пусты");
             }
-            else if (reply.Distortion == "0")
+            else if (PassText == null)
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Ошибка ввода паспортных данных");
+            } else if (PublicKText == null)
+            {
+                MessageBox.Show("Ошибка ввода Адреса");
+            } else if (SaltText == null)
+            {
+                MessageBox.Show("Ошибка ввода кода");
             }
             else
             {
-                MessageBox.Show(reply.Distortion);
-                Service.frame.Navigate(new VotingResultView());
+                var reply = Service.Client.AuthRegister(new RegData
+                {
+                    Passport = PassText,
+                    PublicK = PublicKText,
+                    Salt = SaltText
+                });
+                if (reply.Distortion == "pass" || reply.Distortion == "pk")
+                {
+                    MessageBox.Show("Error");
+                    PublicKText = null;
+                    PassText = null;
+                    SaltText = null;
+                }
+                else if (reply.Distortion == "time")
+                {
+                    Service.frame.Navigate(new VotingResultView());
+                }
+                else if (reply.Distortion == "cdt")
+                {
+                    MessageBox.Show("Использован адрес кандидата");
+                    PublicKText = null;
+                    PassText = null;
+                    SaltText = null;
+                }
+                else
+                {
+                    Service.privk = PrivateKText;
+                    MessageBox.Show(reply.Distortion);
+                    Service.frame.Navigate(new VotingStartView());
+
+                }
             }
+            
         });
         public RelayCommand StartCommand => _startCommand ??= new RelayCommand(x =>
         {
-            var reply = Service.Client.AuthLogin(new AuthData
+            if (PublicKText == null && PrivateKText == null)
             {
-                PrivateK = PrivateKText,
-                PublicK = PublicKText
-            });
-            if (reply.Distortion == "1")
-            {
-                Service.privk = PrivateKText;
-                Service.frame.Navigate(new VotingStartView());
+                MessageBox.Show("Поля пусты");
             }
-            else if (reply.Distortion == "0")
+            else if (PublicKText == null)
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Ошибка ввода Адреса");
+            }
+            else if (PrivateKText == null)
+            {
+                MessageBox.Show("Ошибка ввода приватного ключа");
             }
             else
             {
-                Service.frame.Navigate(new VotingResultView());
+                var reply = Service.Client.AuthLogin(new AuthData
+                {
+                    PrivateK = PrivateKText,
+                    PublicK = PublicKText
+                });
+                if (reply.Distortion == "1")
+                {
+                    Service.privk = PrivateKText;
+                    Service.frame.Navigate(new VotingStartView());
+                }
+                else if (reply.Distortion == "0")
+                {
+                    PublicKText = null;
+                    PrivateKText = null;
+                    MessageBox.Show("Error");
+                }
+                else if (reply.Distortion == "zero")
+                {
+                    Service.frame.Navigate(new VotingAfterView());
+                }
+                else
+                {
+                    Service.frame.Navigate(new VotingResultView());
+                }
             }
         });
         public string PassText { get; set; }

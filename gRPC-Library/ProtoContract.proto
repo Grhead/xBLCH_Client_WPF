@@ -4,7 +4,6 @@ package Contract;
 
 
 
-
 service BLCH_Contract {
   rpc AuthRegister(RegData) returns (AuthRegResult);
   rpc AuthLogin(AuthData) returns (AuthRegResult);
@@ -12,7 +11,7 @@ service BLCH_Contract {
   rpc Balance(Address) returns (Lanb); //баланс на счете
   rpc ViewCandidates(Wpar) returns (stream CandidateList); // вывод кандидатов
   rpc Transfer(LowDataChain) returns (IsComplited); // раздача токенов
-  rpc Vote(LowData) returns (IsComplited); // голосование
+  rpc Vote(LowData) returns (IsComplitedVote); // голосование
   rpc TimeBlock(Wpar) returns (stream TimeData); //время до конца голосования
   rpc ChainPrint(Wpar) returns (Chain);
   rpc ResultsWinner(Wpar) returns (stream CandidateListWithBalance);
@@ -66,6 +65,9 @@ message LowDataChain {
 }
 message IsComplited {
   bool ic = 1;
+}
+message IsComplitedVote {
+  string ic = 1;
 }
 message BlockDataGet {
   string BlockNum = 1;

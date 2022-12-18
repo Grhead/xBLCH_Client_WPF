@@ -89,7 +89,7 @@
                         </DataGridTextColumn.CellStyle>
                     </DataGridTextColumn>
                     <DataGridTextColumn
-                        Header="Баланс"
+                        Header="Процент"
                         Binding="{Binding Balance}"
                         FontFamily="Nunito-VariableFont_wght"
                         FontSize="18">
@@ -97,11 +97,9 @@
                             <Style TargetType="DataGridColumnHeader">
                                 <Setter Property="FontSize" Value="18"/>
                                 <Setter Property="FontWeight" Value="Medium"/>
-                                <Setter Property="Background" Value="Transparent"/>
                                 <Setter Property="MinHeight" Value="31"/>
                                 <Setter Property="Foreground" Value="White"/>
                                 <Setter Property="Background" Value="#4F6C77"/>
-                                <Setter Property="HorizontalAlignment" Value="Stretch"/>
                                 <Setter Property="FontFamily" Value="Nunito-VariableFont_wght"/>
                             </Style>
                         </DataGridColumn.HeaderStyle>
