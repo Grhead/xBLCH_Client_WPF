@@ -1,2 +1,0 @@
-obj\Debug\net6.0-windows\API\Proto/ProtoContract.cs \
-obj\Debug\net6.0-windows\API\Proto/ProtoContractGrpc.cs: API/Proto/ProtoContract.proto
